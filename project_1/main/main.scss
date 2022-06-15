@@ -1,0 +1,135 @@
+@import "_font";
+@import "_colors";
+@import "_header";
+@import "_footer";
+
+body {
+    margin: 0;
+    font-family: Roboto, sans-serif;
+}
+
+@media (min-width: 1600px) {
+    .container {
+        margin: 0 auto;
+        width: 1440px;
+    }
+}
+
+.main {
+    width: 100%;
+    height: 1084px;
+    background: linear-gradient(0deg, rgba(4, 10, 45, 0.2), rgba(4, 10, 45, 0.2)), url(img/bg.jpg), #00010C;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &_h1 {
+        color: $gray10;
+        font-size: 56px;
+        line-height: 70px;
+        letter-spacing: 0.02em;
+        width: 900px;
+        font-family: Montserrat, sans-serif;
+        margin-top: 156px;
+
+        &__blue {
+            color: $blueLight;
+        }
+
+        @media (max-width: 1599.9px) {
+            margin-left: 24px;
+        }
+
+        @media (max-width: 1050px) {
+            font-size: 40px;
+            line-height: 56px;
+            width: 700px;
+        }
+
+        @media (max-width: 767.9px) {
+            width: 100%;
+            padding-left: 24px;
+            padding-right: 24px;
+            margin-left: 0;
+        }
+    }
+
+    &_p {
+        color: $gray20;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        width: 700px;
+        margin-top: 48px;
+
+        @media (max-width: 1599.9px) {
+            margin-left: 24px;
+        }
+
+        @media (max-width: 1050px) {
+            font-size: 20px;
+            line-height: 30px;
+            width: 580px;
+        }
+
+        @media (max-width: 767.9px) {
+            width: 100%;
+            padding-left: 24px;
+            padding-right: 24px;
+            margin-left: 0;
+        }
+    }
+
+    &_btn {
+        font-family: inherit;
+        padding: 16px 32px 17px 33px;
+        color: $gray10;
+        background: $blueD;
+        border: none;
+        margin-top: 60px;
+        letter-spacing: 0.02em;
+        font-weight: 400;
+        line-height: 15px;
+
+        @media (max-width: 1599.9px) {
+            margin-left: 24px;
+        }
+    }
+
+    &_achivment {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        margin-top: 146px;
+        font-family: Montserrat, sans-serif;
+        color: $gray10;
+
+        @media (max-width: 767.9px) {
+            flex-direction: column;
+            background: #091245;
+            margin-top: 80px;
+            padding-top: 80px;
+            padding-bottom: 20px;
+        }
+
+        &__itemFirst {
+            font-weight: 700;
+            font-size: 68px;
+            line-height: 65px;
+
+            @media (max-width: 1050px) {
+                font-size: 48px;
+                line-height: 60px;
+            }
+        }
+
+        &__itemSecond {
+            font-weight: 400;
+            font-size: 26px;
+            line-height: 32px;
+
+            @media (max-width: 767.9px) {
+                margin-bottom: 60px;
+            }
+        }
+    }
+}

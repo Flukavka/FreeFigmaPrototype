@@ -1,0 +1,134 @@
+.b-headerBlock {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 845.9px) {
+        padding: 16px;
+    }
+
+    @media (min-width: 845.9px) and (max-width: 1300px) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media (min-width: 1300px) and (max-width: 1599.9px) {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+    &_left {
+        display: flex;
+
+        &Logo {
+            margin-top: 16px;
+        }
+
+        &Company {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 29px;
+            color: #C1C2C7;
+            margin-top: 24px;
+            margin-left: 16px;
+
+            &_tagline {
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 18px;
+                color: #84858F;
+                margin-top: 8px;
+            }
+        }
+
+        @media (max-width: 516px) {
+            align-items: center;
+        }
+
+        @media (max-width: 516px) {
+            &Logo {
+                margin-top: 0;
+
+                img {
+                    width: 40px;
+                    height: 40px;
+
+                }
+            }
+
+            &Company {
+                font-size: 14px;
+                line-height: 17px;
+                margin-top: 0px;
+
+                &_tagline {
+                    font-size: 10px;
+                    line-height: 12px;
+                }
+            }
+        }
+
+        @media (min-width: 845.9px) and (max-width: 1300px) {
+            margin-bottom: 24px;
+            margin-left: 16px;
+        }
+    }
+
+    &_right {
+        display: flex;
+        align-items: center;
+
+        &List {
+            display: flex;
+            align-items: center;
+
+            &__main,
+            &__team,
+            &__services,
+            &__career,
+            &__portfolio {
+                border-right: solid 1px white;
+                height: 15px;
+                padding-right: 15px;
+            }
+
+            &__contacts {
+                border-right: none;
+            }
+
+            a {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 15px;
+                letter-spacing: 0.02em;
+                text-transform: uppercase;
+                color: #E0E1E3;
+                list-style-type: none;
+                text-decoration: none;
+            }
+
+            @media (max-width: 845.9px) {
+                display: none;
+            }
+
+            &__language {
+                margin-left: 24px;
+            }
+
+            &__delimiter {
+                border: 2px solid #656773;
+                height: 50px;
+                margin-left: 24px;
+            }
+
+            &__find {
+                margin-left: 26px;
+            }
+        }
+
+        @media (min-width: 845.9px) {
+            &Burger {
+                display: none;
+            }
+        }
+    }
+}
