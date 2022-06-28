@@ -149,6 +149,7 @@ main {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 @media (max-width: 1200px) {
@@ -370,6 +371,7 @@ main {
   border: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  cursor: pointer;
 }
 
 @media (max-width: 992px) {
@@ -410,7 +412,6 @@ main {
   background-image: url(img/firstDisplayGirl.svg);
   background-repeat: no-repeat;
   background-position: 63%;
-  height: 661px;
   width: 661px;
 }
 
@@ -422,7 +423,6 @@ main {
 
 @media (max-width: 1400px) {
   .firstDisplay_right {
-    height: 640px;
     width: 560px;
     background-position: 64% 52%;
   }
@@ -430,7 +430,6 @@ main {
 
 @media (max-width: 1300px) {
   .firstDisplay_right {
-    height: 660px;
     width: 524px;
     background-position: 64% 52%;
   }
@@ -453,7 +452,6 @@ main {
   .firstDisplay_right {
     margin-right: 16px;
     background-position: 91% 11%;
-    height: 660px;
     width: 340px;
   }
 }
@@ -462,7 +460,6 @@ main {
   .firstDisplay_right {
     margin: 0;
     width: 400px;
-    height: 400px;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
@@ -472,7 +469,926 @@ main {
 @media (max-width: 320px) {
   .firstDisplay_right {
     width: 299px;
-    height: 299px;
   }
+}
+
+.skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 992px) {
+  .skills {
+    margin-top: 72px;
+  }
+}
+
+.skills_headding {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 80px;
+  color: #000000;
+  margin-top: 147px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 992px) {
+  .skills_headding {
+    margin-top: 0;
+    font-size: 36px;
+  }
+}
+
+.skills_card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: 1fr 0.64fr;
+      grid-template-rows: 1fr 0.64fr;
+      grid-template-areas: "one two tree" "one four four";
+  grid-gap: 18px;
+  margin: 95px 133px 76px 127px;
+}
+
+@media (max-width: 1044px) {
+  .skills_card {
+    margin: 53px 26px 106px 32px;
+  }
+}
+
+@media (max-width: 950px) {
+  .skills_card {
+    margin: 36px 30px 52px 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .skills_card {
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 724px) {
+  .skills_card {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "one two" "tree four";
+  }
+}
+
+@media (max-width: 486px) {
+  .skills_card {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 0.8fr 0.8fr 0.8fr;
+        grid-template-rows: 1fr 0.8fr 0.8fr 0.8fr;
+        grid-template-areas: "one" "two" "tree" "four";
+  }
+}
+
+.skills_cardOne {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: one;
+  padding: 35px 45px 92px 43px;
+}
+
+@media (max-width: 1044px) {
+  .skills_cardOne {
+    padding: 0 21px 52px 22px;
+  }
+}
+
+@media (max-width: 950px) {
+  .skills_cardOne {
+    padding: 31px 10px 37px 17px;
+  }
+}
+
+@media (max-width: 575px) {
+  .skills_cardOne {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 31px 10px 28px 17px;
+  }
+  .skills_cardOne > button {
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+  }
+}
+
+.skills_cardTwo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: two;
+  padding: 4px 19px 44px 41px;
+}
+
+@media (max-width: 1044px) {
+  .skills_cardTwo {
+    padding: 5px 10px 30px 29px;
+  }
+}
+
+@media (max-width: 992px) {
+  .skills_cardTwo {
+    padding: 14px 24px 28px 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .skills_cardTwo > button {
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+  }
+}
+
+@media (max-width: 575px) {
+  .skills_cardTwo {
+    /*                 display: flex;
+                flex-direction: column;
+                justify-content: space-between; */
+    padding: 31px 10px 28px 17px;
+  }
+}
+
+.skills_cardTree {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: tree;
+  padding: 9px 43px 44px 41px;
+}
+
+.skills_cardTree div > img {
+  margin-left: -40px;
+}
+
+@media (max-width: 1044px) {
+  .skills_cardTree {
+    padding: 16px 43px 32px 23px;
+  }
+  .skills_cardTree div > img {
+    margin-left: -22px;
+  }
+}
+
+@media (max-width: 992px) {
+  .skills_cardTree {
+    padding: 2px 14px 28px 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .skills_cardTree div > img {
+    margin-left: -17px;
+  }
+  .skills_cardTree > button {
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+  }
+}
+
+@media (max-width: 575px) {
+  .skills_cardTree {
+    padding: 22px 10px 28px 17px;
+  }
+}
+
+.skills_cardFour {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: four;
+  padding: 43px 25px 44px 44px;
+}
+
+.skills_cardFour__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.skills_cardFour__flex > h3 {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 80px;
+  color: #263238;
+  margin: 0;
+}
+
+.skills_cardFour__flex > p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #8F95A5;
+  margin: 0;
+}
+
+.skills_cardFour__flexBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+@media (max-width: 1044px) {
+  .skills_cardFour {
+    padding: 3px 18px 34px 29px;
+  }
+  .skills_cardFour div > h3 {
+    font-size: 22px;
+  }
+  .skills_cardFour div > p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+@media (max-width: 950px) {
+  .skills_cardFour {
+    padding: 3px 18px 28px 22px;
+  }
+  .skills_cardFour div > h3 {
+    font-size: 20px;
+  }
+  .skills_cardFour div > p {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 724px) {
+  .skills_cardFour__flexBlock {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 575px) {
+  .skills_cardFour {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 31px 10px 28px 17px;
+  }
+  .skills_cardFour > button {
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+  }
+}
+
+.skills_cardOne, .skills_cardTwo, .skills_cardTree, .skills_cardFour {
+  background: #F5F5F5;
+  border-radius: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.skills_cardOne div > h3, .skills_cardTwo div > h3, .skills_cardTree div > h3, .skills_cardFour div > h3 {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 80px;
+  color: #263238;
+  margin: 0;
+}
+
+@media (max-width: 1044px) {
+  .skills_cardOne div > h3, .skills_cardTwo div > h3, .skills_cardTree div > h3, .skills_cardFour div > h3 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 950px) {
+  .skills_cardOne div > h3, .skills_cardTwo div > h3, .skills_cardTree div > h3, .skills_cardFour div > h3 {
+    font-size: 20px;
+  }
+}
+
+.skills_cardOne div > p, .skills_cardTwo div > p, .skills_cardTree div > p, .skills_cardFour div > p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #8F95A5;
+  margin: 0;
+}
+
+@media (max-width: 1044px) {
+  .skills_cardOne div > p, .skills_cardTwo div > p, .skills_cardTree div > p, .skills_cardFour div > p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+@media (max-width: 950px) {
+  .skills_cardOne div > p, .skills_cardTwo div > p, .skills_cardTree div > p, .skills_cardFour div > p {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+
+.skills_cardOne div > img, .skills_cardTwo div > img, .skills_cardTree div > img, .skills_cardFour div > img {
+  max-width: 390px;
+  max-height: 390px;
+}
+
+@media (max-width: 1300px) {
+  .skills_cardOne div > img, .skills_cardTwo div > img, .skills_cardTree div > img, .skills_cardFour div > img {
+    max-width: 260px;
+    max-height: 260px;
+  }
+}
+
+@media (max-width: 992px) {
+  .skills_cardOne div > img, .skills_cardTwo div > img, .skills_cardTree div > img, .skills_cardFour div > img {
+    max-height: 173px;
+  }
+}
+
+@media (max-width: 575px) {
+  .skills_cardOne div > img, .skills_cardTwo div > img, .skills_cardTree div > img, .skills_cardFour div > img {
+    max-width: 200px;
+  }
+}
+
+.skills_cardOne > button, .skills_cardTwo > button, .skills_cardTree > button, .skills_cardFour > button {
+  background: #263238;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #FFFFFF;
+  padding: 17px 63px 16px 64px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  margin-top: 24px;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 1044px) {
+  .skills_cardOne > button, .skills_cardTwo > button, .skills_cardTree > button, .skills_cardFour > button {
+    padding: 16px 41px 16px 42px;
+  }
+}
+
+@media (max-width: 950px) {
+  .skills_cardOne > button, .skills_cardTwo > button, .skills_cardTree > button, .skills_cardFour > button {
+    padding: 14px 41px 14px 42px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 575px) {
+  .skills_cardOne > button, .skills_cardTwo > button, .skills_cardTree > button, .skills_cardFour > button {
+    padding: 14px 54px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+@media (max-width: 486px) {
+  .skills_cardOne > button, .skills_cardTwo > button, .skills_cardTree > button, .skills_cardFour > button {
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+  }
+}
+
+@media (max-width: 320px) {
+  .skills_cardOne, .skills_cardTwo, .skills_cardTree, .skills_cardFour {
+    padding: 8px 16px 38px 16px;
+  }
+}
+
+.aboutUs {
+  margin-left: 131px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 0.6fr 1fr 1fr;
+      grid-template-rows: 0.6fr 1fr 1fr;
+  -ms-grid-columns: 0.3fr 0.3fr 0.3fr 1fr;
+      grid-template-columns: 0.3fr 0.3fr 0.3fr 1fr;
+      grid-template-areas: "headding headding headding imageEl" "paragraph paragraph paragraph imageEl" "pupils teachers language imageEl";
+}
+
+@media (max-width: 992px) {
+  .aboutUs {
+    margin-left: 31px;
+    -ms-grid-columns: 0.2fr 0.3fr 0.3fr 336px;
+        grid-template-columns: 0.2fr 0.3fr 0.3fr 336px;
+  }
+}
+
+@media (max-width: 767px) {
+  .aboutUs {
+    -ms-grid-rows: 0.1fr 1fr 0.8fr;
+        grid-template-rows: 0.1fr 1fr 0.8fr;
+    -ms-grid-columns: 0.2fr 0.35fr 0.3fr 336px;
+        grid-template-columns: 0.2fr 0.35fr 0.3fr 336px;
+  }
+}
+
+@media (max-width: 575px) {
+  .aboutUs {
+    -ms-grid-rows: 0.4fr 1fr 0.4fr 0.2fr;
+        grid-template-rows: 0.4fr 1fr 0.4fr 0.2fr;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "headding headding headding" "imageEl imageEl imageEl" "paragraph paragraph paragraph" "pupils teachers language";
+    margin-left: 33px;
+    margin-right: 32px;
+  }
+}
+
+@media (max-width: 500px) {
+  .aboutUs {
+    -ms-grid-rows: 0.4fr 1fr 0.4fr 0.2fr 0.2fr 0.2fr;
+        grid-template-rows: 0.4fr 1fr 0.4fr 0.2fr 0.2fr 0.2fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "headding" "imageEl" "paragraph" "pupils" "teachers" "language";
+    margin-left: 18px;
+    margin-right: 18px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.aboutUs_headding {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 80px;
+  color: #000000;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: headding;
+  margin-top: 49px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+@media (max-width: 992px) {
+  .aboutUs_headding {
+    margin-top: 0;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 767px) {
+  .aboutUs_headding {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 575px) {
+  .aboutUs_headding {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+}
+
+.aboutUs_left {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: paragraph;
+}
+
+.aboutUs > p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #8F95A5;
+  margin: 0;
+  max-width: 635px;
+  margin-bottom: 6px;
+  margin-top: 24px;
+}
+
+@media (max-width: 992px) {
+  .aboutUs > p {
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .aboutUs > p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+@media (max-width: 575px) {
+  .aboutUs > p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 320px) {
+  .aboutUs > p {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
+
+.aboutUs .counters_pupils {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: pupils;
+}
+
+.aboutUs .counters_teachers {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: teachers;
+}
+
+.aboutUs .counters_language {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: language;
+  margin-left: -54px;
+}
+
+@media (max-width: 500px) {
+  .aboutUs .counters_language {
+    margin-left: 0;
+  }
+}
+
+.aboutUs .counters_pupils,
+.aboutUs .counters_teachers,
+.aboutUs .counters_language {
+  margin-top: 32px;
+  text-align: center;
+  -ms-grid-column-align: left;
+      justify-self: left;
+}
+
+@media (max-width: 992px) {
+  .aboutUs .counters_pupils,
+  .aboutUs .counters_teachers,
+  .aboutUs .counters_language {
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 575px) {
+  .aboutUs .counters_pupils,
+  .aboutUs .counters_teachers,
+  .aboutUs .counters_language {
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+}
+
+.aboutUs .text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #8F95A5;
+  margin: 0;
+  max-width: 635px;
+}
+
+@media (max-width: 992px) {
+  .aboutUs .text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .aboutUs .text {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+
+.aboutUs .count {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 80px;
+  color: #2A3246;
+}
+
+@media (max-width: 992px) {
+  .aboutUs .count {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .aboutUs .count {
+    font-size: 22px;
+    line-height: 60px;
+  }
+}
+
+.aboutUs_right {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 4;
+  grid-area: imageEl;
+}
+
+@media (min-width: 1600px) {
+  .aboutUs_right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 992px) {
+  .aboutUs_right {
+    place-self: center;
+  }
+  .aboutUs_right > img {
+    max-width: 336px;
+  }
+}
+
+@media (max-width: 992px) and (max-width: 320px) {
+  .aboutUs_right > img {
+    max-width: 320px;
+  }
+}
+
+.pricing {
+  margin-left: 130px;
+  margin-right: 130px;
+  margin: auto 130px 140px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 0.2fr 1fr;
+      grid-template-rows: 0.2fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-areas: "headdingPr headdingPr headdingPr" "online live personal";
+  grid-gap: 8px;
+}
+
+@media (max-width: 992px) {
+  .pricing {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .pricing {
+    grid-gap: 0;
+  }
+}
+
+.pricing_headding {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: headdingPr;
+  text-align: center;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 80px;
+  color: #000000;
+  margin: 160px 0 40px 0;
+}
+
+@media (max-width: 992px) {
+  .pricing_headding {
+    font-size: 36px;
+    margin: 90px 0 24px 0;
+  }
+}
+
+.pricing_card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 0.8fr 0.1fr;
+      grid-template-rows: 1fr 0.8fr 0.1fr;
+  padding: 0 24px;
+}
+
+@media (max-width: 1200px) {
+  .pricing_card {
+    -ms-grid-rows: 1fr 200px 0.1fr;
+        grid-template-rows: 1fr 200px 0.1fr;
+  }
+}
+
+@media (max-width: 767px) {
+  .pricing_card {
+    -ms-grid-rows: 1fr 140px 0.1fr;
+        grid-template-rows: 1fr 140px 0.1fr;
+  }
+}
+
+.pricing_card > div > h3,
+.pricing_card > div > p {
+  margin: 0;
+}
+
+.pricing_card > div > h3 {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 48px;
+  color: #263238;
+}
+
+@media (max-width: 992px) {
+  .pricing_card > div > h3 {
+    font-size: 22px;
+    line-height: 34px;
+  }
+}
+
+@media (max-width: 767px) {
+  .pricing_card > div > h3 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+.pricing_card > div > p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #8F95A5;
+}
+
+@media (max-width: 992px) {
+  .pricing_card > div > p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .pricing_card > div > p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+.pricing_card > img {
+  max-height: 280px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 992px) {
+  .pricing_card > img {
+    max-width: 267px;
+    max-height: 200px;
+    margin-bottom: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  .pricing_card > img {
+    max-width: 200px;
+    max-height: 200px;
+  }
+}
+
+.pricing_card .price {
+  background: #EEEEEE;
+  border-radius: 5px;
+  padding: 8px 24px;
+  margin-top: 24px;
+  justify-self: start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 767px) {
+  .pricing_card .price {
+    padding: 8px 14px;
+  }
+}
+
+.pricing_card .price_value {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 45px;
+  color: #263238;
+}
+
+.pricing_card .price_period {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #546269;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-left: 8px;
+}
+
+@media (max-width: 992px) {
+  .pricing_card .price_value {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .pricing_card .price_period {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .pricing_card .price_value {
+    font-size: 22px;
+    line-height: 33px;
+  }
+}
+
+.pricing .online {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: online;
+}
+
+.pricing .live {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: live;
+}
+
+.pricing .personal {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: personal;
 }
 /*# sourceMappingURL=style.css.map */
