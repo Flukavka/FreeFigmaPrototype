@@ -227,8 +227,8 @@ main {
   .firstDisplay_left {
     margin-left: 40px;
     margin-top: 68px;
-    background-size: 70px;
-    background-position: 75% 11%;
+    background-size: 56px;
+    background-position: 75% 18%;
   }
 }
 
@@ -952,6 +952,7 @@ main {
         grid-template-areas: "headding headding headding" "imageEl imageEl imageEl" "paragraph paragraph paragraph" "pupils teachers language";
     margin-left: 33px;
     margin-right: 32px;
+    margin-top: 48px;
   }
 }
 
@@ -1007,6 +1008,12 @@ main {
         align-self: center;
     -ms-grid-column-align: center;
         justify-self: center;
+  }
+}
+
+@media (max-width: 320px) {
+  .aboutUs_headding {
+    font-size: 24px;
   }
 }
 
@@ -1210,6 +1217,27 @@ main {
   }
 }
 
+@media (max-width: 575px) {
+  .pricing {
+    -ms-grid-rows: 0.2fr 1fr 0.5fr 1fr;
+        grid-template-rows: 0.2fr 1fr 0.5fr 1fr;
+    -ms-grid-columns: 0.75fr;
+        grid-template-columns: 0.75fr;
+        grid-template-areas: "headdingPr" "online" "live" "personal";
+    grid-gap: 24px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 320px) {
+  .pricing {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 .pricing_headding {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -1227,6 +1255,25 @@ main {
   .pricing_headding {
     font-size: 36px;
     margin: 90px 0 24px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .pricing_headding {
+    font-size: 30px;
+    margin: 40px 0 24px 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .pricing_headding {
+    margin: 40px 0 0 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .pricing_headding {
+    font-size: 24px;
   }
 }
 
@@ -1254,9 +1301,25 @@ main {
   }
 }
 
+@media (max-width: 575px) {
+  .pricing_card {
+    -ms-grid-rows: 1fr 0.2fr 0.1fr;
+        grid-template-rows: 1fr 0.2fr 0.1fr;
+    margin-bottom: 40px;
+  }
+}
+
 .pricing_card > div > h3,
 .pricing_card > div > p {
   margin: 0;
+}
+
+@media (max-width: 575px) {
+  .pricing_card > div > h3,
+  .pricing_card > div > p {
+    text-align: center;
+    margin-bottom: 16px;
+  }
 }
 
 .pricing_card > div > h3 {
@@ -1277,6 +1340,12 @@ main {
   .pricing_card > div > h3 {
     font-size: 20px;
     line-height: 28px;
+  }
+}
+
+@media (max-width: 575px) {
+  .pricing_card > div > h3 {
+    font-size: 24px;
   }
 }
 
@@ -1318,6 +1387,12 @@ main {
   .pricing_card > img {
     max-width: 200px;
     max-height: 200px;
+  }
+}
+
+@media (max-width: 575px) {
+  .pricing_card > img {
+    place-self: center;
   }
 }
 
@@ -1371,6 +1446,14 @@ main {
   .pricing_card .price_value {
     font-size: 22px;
     line-height: 33px;
+  }
+}
+
+@media (max-width: 575px) {
+  .pricing_card .price {
+    margin: 0;
+    -ms-grid-column-align: center;
+        justify-self: center;
   }
 }
 

@@ -179,8 +179,8 @@ main {
         @media(max-width: 767px) {
             margin-left: 40px;
             margin-top: 68px;
-            background-size: 70px;
-            background-position: 75% 11%;
+            background-size: 56px;
+            background-position: 75% 18%;
         }
 
         @media (max-width: 575px) {
@@ -721,6 +721,7 @@ main {
             "pupils teachers language";
         margin-left: 33px;
         margin-right: 32px;
+        margin-top: 48px;
     }
 
     @media (max-width: 500px) {
@@ -759,6 +760,10 @@ main {
         @media (max-width: 575px) {
             align-self: center;
             justify-self: center;
+        }
+
+        @media (max-width: 320px) {
+            font-size: 24px;
         }
     }
 
@@ -907,6 +912,21 @@ main {
         grid-gap: 0;
     }
 
+    @media (max-width: 575px) {
+        grid-template-rows: 0.2fr 1fr 0.5fr 1fr;
+        grid-template-columns: 0.75fr;
+        grid-template-areas: "headdingPr"
+            "online"
+            "live"
+            "personal";
+        grid-gap: 24px;
+        justify-content: center;
+    }
+
+    @media (max-width: 320px) {
+        grid-template-columns: 1fr;
+    }
+
     &_headding {
         grid-area: headdingPr;
         text-align: center;
@@ -920,13 +940,25 @@ main {
             font-size: 36px;
             margin: 90px 0 24px 0;
         }
+
+        @media (max-width: 767px) {
+            font-size: 30px;
+            margin: 40px 0 24px 0;
+        }
+
+        @media (max-width: 575px) {
+            margin: 40px 0 0 0;
+        }
+
+        @media (max-width: 320px) {
+            font-size: 24px;
+        }
     }
 
     &_card {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 0.8fr 0.1fr;
-        ;
         padding: 0 24px;
 
         @media (max-width: 1200px) {
@@ -937,11 +969,21 @@ main {
             grid-template-rows: 1fr 140px 0.1fr;
         }
 
+        @media (max-width: 575px) {
+            grid-template-rows: 1fr 0.2fr 0.1fr;
+            margin-bottom: 40px;
+        }
+
         >div {
 
             >h3,
             >p {
                 margin: 0;
+
+                @media (max-width: 575px) {
+                    text-align: center;
+                    margin-bottom: 16px;
+                }
             }
 
             >h3 {
@@ -958,6 +1000,10 @@ main {
                 @media (max-width: 767px) {
                     font-size: 20px;
                     line-height: 28px;
+                }
+
+                @media (max-width: 575px) {
+                    font-size: 24px;
                 }
             }
 
@@ -992,6 +1038,10 @@ main {
             @media (max-width: 767px) {
                 max-width: 200px;
                 max-height: 200px;
+            }
+
+            @media (max-width: 575px) {
+                place-self: center;
             }
         }
 
@@ -1040,6 +1090,11 @@ main {
                     font-size: 22px;
                     line-height: 33px;
                 }
+            }
+
+            @media (max-width: 575px) {
+                margin: 0;
+                justify-self: center;
             }
         }
     }
