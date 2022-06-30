@@ -18,10 +18,10 @@
             <div class="header_left">Brit<span class="header_left__color">lex</span></div>
             <nav class="header_center">
                 <!-- <li><a name="firstDisplay">Home</a></li> -->
-                <li><a href="skillsLink">Skills</a></li>
-                <li><a href="aboutLink">About Us</a></li>
-                <li><a href="pricingLink">Pricing</a></li>
-                <li><a href="contactsLink">Contacts</a></li>
+                <li><a href="#skillsLink">Skills</a></li>
+                <li><a href="#aboutLink">About Us</a></li>
+                <li><a href="#pricingLink">Pricing</a></li>
+                <li><a href="#contactsLink">Contacts</a></li>
                 <img class="header_center__burger" src="img/burger.svg" alt="menu">
             </nav>
             <button class="header_right">Let’s Talk</button>
@@ -37,7 +37,7 @@
                 </div>
                 <div class="firstDisplay_right"></div>
             </div>
-            <div class="skills">
+            <div class="skills" id="skillsLink">
                 <h2 class="skills_headding">Skills</h2>
                 <div class="skills_card">
                     <div class="skills_cardOne">
@@ -91,7 +91,7 @@
                     </div>
                 </div>
             </div>
-            <div class="aboutUs">
+            <div class="aboutUs" id="aboutLink">
                 <h2 class="aboutUs_headding">About Us</h2>
                 <p class="aboutUs_left">The model offers a framework for discussing problems related to the user's
                     experience, as
@@ -113,7 +113,7 @@
                 </div>
                 <div class="aboutUs_right"><img src="img/aboutUs.svg" alt="picture"></div>
             </div>
-            <div class="pricing">
+            <div class="pricing" id="pricingLink">
                 <h2 class="pricing_headding">Pricing</h2>
                 <div class="pricing_card online">
                     <img src="img/pricingOne.svg" alt="picture" class="imgEl">
@@ -153,9 +153,26 @@
                     </div>
                 </div>
             </div>
+            <div class="contactUs" id="contactsLink">
+                <img src="img/contactUs.svg" alt="" class="contactUs_img">
+                <h2 class="contactUs_headding">Contact Us</h2>
+                <p class="contactUs_txt">Discover your current English level by taking our free online English test.
+                    Sign
+                    up to our newsletter for learning tips and free resources</p>
+                <form action="#">
+                    <input type="email" placeholder="Enter Your E-mail">
+                    <button>Subscribe</button>
+                </form>
+            </div>
     </div>
     </main>
-    <footer class=""></footer>
+    <footer class="footer">
+        <hr class="footer_hr">
+        <div class="footerBlock">
+            <div class="footerBlock_left">Brit<span class="footerBlock_left__color">lex</span></div>
+            <div class="footerBlock_right">Terms and Conditions • Privacy Policy • Cookie Policy</div>
+        </div>
+    </footer>
     </div>
 </body>
 
