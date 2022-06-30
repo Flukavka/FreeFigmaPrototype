@@ -194,9 +194,8 @@ main {
 
 @media (min-width: 1650px) {
   .firstDisplay {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
